@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100% 150px;
+    grid-template-areas: 
+    "h h"
+    "f f"
+    "r r";
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    grid-area: h;
+    background-color: #213553;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+header > img {
+    height: 80px;
+}
+
+header > a{
+    background-color: aqua;
+    font-size: 2rem;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+section {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > h1{
+    color: white;
+    background-color: #213553;
+    font-size: 2rem;
+    padding: 10px 10px;
+    margin-bottom: 30px; 
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+form > label{
+    margin: 10px 0;
+    text-align: center;
+    color:#213553;
+    border-color: #213553;
+    font-size: 2rem;
+}
+
+form > input  {
+    font-size: 2rem;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #213553;
+    width: 100%;
+}
+
+.entrar{
+    text-align: center;
+    bottom: 15%;
+    color: white;
+    font-size: 2rem;
+    border: 1px solid #213553;
+    background-color: #213553;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 130px;
+}
+
+.entrar:hover{
+    background-color: #2B4E6F;
+}
+
+.logo > ul{
+    font-weight: 2000px;
+}
+
+.logo img{
+    height:50px;
+}
+
+.hesquerda{
+    display: flex;
+    align-items: center;
+}
+
+.hesquerda > ul{
+    color:white;
+    padding-left:24px;
+    font-size: 2rem;
+    font-weight:100;
+}
+
+.hdireita {
+    display: flex;
+    align-items: center;
+}
+
+.hdireita img{
+    height:50px
+}
+
+.hdireita:hover img{
+    height:60px;
+    transition:0.2s;
+}
+
+.hdireita > p{
+    color: white;
+    font-weight: 300;
+}
+
+.btn-login {
+    color: white;
+    padding: 7px 7px;
+    margin-left:3px;
+    font-weight: 500;
+}
+
+.btn-login:hover{
+    transform: scale(1.1);
+    transition:0.2s;
+    font-weight: 2000;
+}
+
+.btn-cadastrar {
+    color: white;
+    padding: 7px 7px;
+    margin-left:3px;
+    font-weight: 500;
+}
+
+.btn-cadastrar:hover{
+    transform: scale(1.1);
+    transition:0.2s;
+    font-weight: 2000;
+}
+
+.rodape{
+    width:200%;
+    grid: r;
+    background: #2B4E6F;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}

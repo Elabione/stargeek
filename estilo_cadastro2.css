@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    overflow: scroll;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 90% 100px;
+    grid-template-areas: 
+    "h h"
+    "f f"
+    "r r";
+}
+
+a {
+    text-decoration: none;
+    margin-right:  50px;
+}
+
+header{
+    grid-area: h;
+    background-color: #213553;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+header > img {
+    height: 80px;
+}
+
+header > a{
+    background-color: aqua;
+    font-size: 2rem;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+section {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+form > h1{
+    color: white;
+    background-color: #213553;
+    font-size: 2rem;
+    padding: 10px 10px;
+    margin-bottom: 30px; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > label{
+    margin: 10px 0px;
+    text-align: center;
+    color:#213553;
+    border-color: #213553;
+    font-size: 2rem;
+    border-width: 4px;
+}
+
+form > input  {
+    font-size: 1.9rem;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: #213553;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    color:white;
+    background-color: #213553;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 0px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+input[type="submit"]:hover{
+    background-color: #2B4E6F;
+    color: white;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo > ul{
+    font-weight: bold;
+}
+
+.logo img{
+    height:50px;
+}
+
+.hesquerda{
+    display: flex;
+    align-items: center;
+}
+
+.hesquerda > ul{
+    color:white;
+    padding-left:24px;
+    font-size: 2rem;
+    font-weight:100;
+}
+
+.hdireita {
+    display: flex;
+    align-items: center;
+}
+
+.hdireita img{
+    height:50px
+}
+
+.hdireita:hover img{
+    height:60px;
+    transition:0.2s;
+}
+
+.hdireita > p{
+    color: white;
+    font-weight: 300;
+}
+
+.btn-login {
+    color: white;
+    padding: 7px 7px;
+    font-weight: 500;
+    margin: 0px 0px 0px 3px;
+}
+
+.btn-login:hover{
+    transform: scale(1.1);
+    transition:0.2s;
+    font-weight: 2000;
+}
+
+.btn-cadastrar {
+    color: white;
+    padding: 7px 7px;
+    margin-left:3px;
+    font-weight: 500;
+}
+
+.btn-cadastrar:hover{
+    transform: scale(1.1);
+    transition:0.2s;
+    font-weight: 2000;
+}
+
+.rodape{
+    grid: r;
+    width: 200%;
+    height: 100px;
+    background: #2B4E6F;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.barra{
+    grid: f;
+    width: 650px;
+    height: 12px; 
+    background: #213553;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.h1 {
+    color: white;
+    background-color: #213553;
+    font-size: 22px;
+    padding: 10px 10px;
+    margin-bottom: 30px; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+.h2 {
+    color: white;
+    background-color: #213553;
+    font-size: 22px;
+    padding: 10px 10px;
+    margin-bottom: 30px; 
+    border-radius: 10px;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+}
+
+.redes > i {
+    font-size: 1.5rem;
+    padding-left: 16px;
+}
+
+fieldset > input[type="radio"]:not(:first-of-type){
+    margin-left: 50px;
+}
+
+.voltar{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    border: 1px solid #213553;
+    background-color: #213553;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 120px;
+}
+
+.voltar:hover{
+    background-color: #2B4E6F;
+  }
+
+  .cadastrar{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    border: 1px solid #213553;
+    background-color: #213553;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 180px;
+}
+
+.cadastrar:hover{
+    background-color: #2B4E6F;
+  }

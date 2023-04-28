@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 80% auto;
+    grid-template-areas:
+    "h h"
+    "e e"
+    "a s"
+    "r r";
+
+}
+
+header{
+    grid-area: h;
+    background-color: #213553;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+header > img {
+    height: 80px;
+}
+
+header > a{
+    background-color: aqua;
+    font-size: 2rem;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.logo > ul{
+    font-weight: 2000px;
+}
+
+.logo img{
+    height:50px;
+}
+
+.hesquerda{
+    display: flex;
+    align-items: center;
+}
+
+.hesquerda > ul{
+    color:white;
+    padding-left:24px;
+    font-size: 2rem;
+    font-weight:100;
+}
+
+.hdireita {
+    display: flex;
+    align-items: center;
+}
+
+.hdireita img{
+    height:50px
+}
+
+.hdireita:hover img{
+    height:60px;
+    transition:0.2s;
+}
+
+.hdireita > p{
+    color: white;
+    font-weight: 300;
+}
+
+.btn-login {
+    color: white;
+    padding: 7px 7px;
+    margin-left:3px;
+    font-weight: 500;
+}
+
+.btn-login:hover{
+    transform: scale(1.1);
+    transition:0.2s;
+    font-weight: 2000;
+}
+
+.btn-cadastrar {
+    color: white;
+    padding: 7px 7px;
+    margin-left:3px;
+    font-weight: 500;
+}
+
+.btn-cadastrar:hover{
+    transform: scale(1.1);
+    transition:0.2s;
+    font-weight: 2000;
+}
+
+.hero_image{
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero_image{
+    background-image: url(images/hero_image.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .hero_text{
+     
+      color: white;
+      font-weight: 50px;
+      font-size: 2rem;
+    }
+
+    .cadastre_se{
+        
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        border: 1px solid #213553;
+        background-color: #213553;
+        padding: 12px 12px;
+        border-radius: 10px;
+      }
+    
+    .cadastre_se:hover{
+        transition:0.2s;
+        font-size: 3rem;
+        background-color: #2B4E6F;
+      }
+
+main{
+    grid-area: a;
+    background-color: #213553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.branco{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre > h1 {
+   
+    width: 50%;
+    height: 10%;
+   
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 79px;
+    text-decoration-line: underline;
+    color: white;
+}
+
+.sobre{
+    background-image: url(images/sobre_image.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+.sobre_back{
+    width: 80%;
+    height: 80%;
+    background: #213553;
+    border-radius: 15px;
+    
+
+}
+
+.sobre_txt > p{
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 54px;
+    color: white;
+}
+
+section{
+    grid-area: s;
+    background-color: #213553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    background-image: url(images/img1.png);
+    background-size: 100% 100%;
+    animation: slider 5s infinite linear;
+    animation-duration: 30s;
+    width: 90%;
+    height: 90%;
+}
+
+    @keyframes slider{
+        0%{background-image: url(images/img1.png);}
+        25%{background-image: url(images/img2.png);}
+        50%{background-image: url(images/img3.png);}
+        75%{background-image: url(images/img4.png);}
+    }
+
+
+footer{
+    grid-area:r;
+}
+
+.rodape{
+   
+   
+    background: #122334;
+    color:white;
+    font-size: 20px;
+}
+
+
+.rdestaque{
+    font-weight: bold;
+}
+
+.rodape_top{
+    
+    background: #2B4E6F;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 80%  auto;
+        grid-template-areas:
+        "h"
+        "e"
+        "a"
+        "r";
+    
+    }
+}
