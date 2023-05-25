@@ -168,7 +168,7 @@ form > input  {
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.proximo{
+.button{
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -178,6 +178,7 @@ form > input  {
     border-radius: 10px;
 }
 
-.proximo:hover{
+.button:hover{
     background-color: #2B4E6F;
+    border-radius: 10px;
   }

@@ -184,7 +184,7 @@ section > p{
     text-align: center;
 }
 
-.cadastrar{
+button{
     text-align: center;
     bottom: 15%;
     color: white;
@@ -197,7 +197,7 @@ section > p{
     width: 200px;
 }
 
-.cadastrar:hover{
+button:hover{
     background-color: #2B4E6F;
 }
 

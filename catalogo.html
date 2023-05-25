@@ -46,6 +46,11 @@
             <div class="hdireita">
                 <img src="images/ph_user-circle-fill.png" alt="user">
                 <a href="index.html" class="btn-login">logout</a>
+
+        <button id="btn">Cadastrar Item</button>
+        <div class="mensagem"></div>
+        <div class="cards">
+        </div>
             </div>
 
         </header>
@@ -55,45 +60,26 @@
             <br><h1>Conte-nos mais sobre você!</h1>
 
             <p>Franquias Famosas</p>
-            <div class="famosas">
+            <div class="cadmodal">
+                <div class="modal">
+                <form action="" id="formulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="descricao">Descrição</label>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                    <label for="foto">Foto</label>
+                    <input type="text" name="foto" id="foto">
+                    <button class="btncadastrar"> Cadastrar</button>
+                    <button class="btneditar">Editar</button>
+                    <input type="hidden" id="idalterar">
+                </form>
+                <button id="btnclose" onclick="fechar()">Fechar</button>
+            </div>
+            </div>
                 
-                <img src="images/starwars.png" style="margin: 50px 70px 50px 50px;" alt="">
-                <img src="images/Harry_Potter_wordmark 1.png" style="margin: 50px 70px 50px 50px;" alt="">
-                <img src="images/marvel.png" style="margin: 50px 50px 50px 50px;" alt="">
+            </div>
 
-                <div class="mais">
-                <img src="images/mais.png" style="margin: 50px 50px 80px 50px;" alt="">
-                </div>
-
-            </div><br>
-
-            <p>Em Alta</p>
-            <div class="alta">
-
-                <img src="images/joker.png" style="margin: 50px 50px 50px 50px;" alt="">
-                <img src="images/avatar.png" style="margin: 50px 70px 50px 50px;" alt="">
-                <img src="images/miranha.png" style="margin: 50px 50px 50px 50px;" alt="">
-                <div class="mais">
-                <img src="images/mais.png" style="margin: 50px 50px 80px 50px;" alt="">
-                </div>
-
-            </div><br>
-
-            <p>Animes</p>
-            <div class="animes">
-
-                <img src="images/dragonball.png" style="margin: 50px 70px 50px 50px;" alt="">
-                <img src="images/onepiece.png" style="margin: 50px 70px 50px 50px;" alt="">
-                <img src="images/naruto.png" style="margin: 50px 50px 50px 50px;" alt="">
-                <div class="mais">
-                <img src="images/mais.png" style="margin: 50px 50px 80px 50px;" alt="">
-                </div>
-
-            </div><br>
-
-            <div class="cadastrar">
-                <a href="cadastro_item.html">Cadastrar Item</a>
-            </div> <br>
+        
 
         </section>
 

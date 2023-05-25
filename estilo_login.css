@@ -95,7 +95,7 @@ form > input  {
     width: 100%;
 }
 
-.entrar{
+.button{
     text-align: center;
     bottom: 15%;
     color: white;
@@ -108,7 +108,7 @@ form > input  {
     width: 130px;
 }
 
-.entrar:hover{
+.button:hover{
     background-color: #2B4E6F;
 }
 
