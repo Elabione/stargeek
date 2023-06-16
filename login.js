@@ -7,8 +7,11 @@ formulario.onsubmit = (evt)=>{
     let dados = JSON.parse(localStorage.getItem("bd"));
     let logado;
     dados.forEach((elemento) => {
+  
         if(elemento.emailcliente == email.value && elemento.senhacliente == senha.value){
+            
             msg.innerHTML = "Aguarde redirecionando..."
+            sessionStorage.setItem("email", email.value);
             setTimeout(()=>{
                 window.location.assign("catalogo.html");
             }, 2000);
