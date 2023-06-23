@@ -13,13 +13,13 @@ html, body {
     padding:0;
     height:100%;
     width:100%;
-    overflow:hidden;
+    overflow:auto;
 }
 
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 233px;
+    grid-template-rows: auto auto 278px;
     grid-template-areas: 
     "h h"
     "f f"

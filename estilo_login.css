@@ -20,7 +20,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100% 150px;
+    grid-template-rows: 100px 100% 155px;
     grid-template-areas: 
     "h h"
     "f f"
